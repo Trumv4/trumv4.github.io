@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Phạm Anh Tú - Trang Cá Nhân</title>
+  <style>
+    :root {
+      --light-bg: #f9f9f9;
+      --light-text: #111;
+      --dark-bg: #111;
+      --dark-text: #f9f9f9;
+      --accent: #3b82f6;
+    }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      transition: all 0.3s;
+    }
+    .container {
+      max-width: 800px;
+      margin: auto;
+      padding: 20px;
+    }
+    h1, h2, p {
+      margin-bottom: 10px;
+    }
+    .section {
+      margin-bottom: 30px;
+    }
+    .dark {
+      background-color: var(--dark-bg);
+      color: var(--dark-text);
+    }
+    .light {
+      background-color: var(--light-bg);
+      color: var(--light-text);
+    }
+    .toggle {
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      background: var(--accent);
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body class="dark">
+  <button class="toggle" onclick="toggleTheme()">Chuyển chế độ</button>
+  <div class="container">
+    <h1>Phạm Anh Tú</h1>
+    <div class="section">
+      <h2>Giới Thiệu</h2>
+      <p>Buôn VPS - Netflix - Proxy Private Ngoại - Cung Cấp Account Googcloud, DigitalOcean... - Cung Cấp ChatGPT, Gói Mạng VinaPhone 120k/Tháng Kgh,...</p>
+    </div>
+    <div class="section">
+      <h2>Kinh Nghiệm</h2>
+      <p>Trúc Đan Kỳ</p>
+    </div>
+    <div class="section">
+      <h2>Kỹ Năng</h2>
+      <p>Chìm</p>
+    </div>
+    <div class="section">
+      <h2>Liên Hệ</h2>
+      <p>Zalo: 0326615531</p>
+      <p>SĐT: 0837497443</p>
+    </div>
+    <div class="section">
+      <h2>Mạng Xã Hội</h2>
+      <p><a href="https://www.facebook.com/thanhxuanngungoc" target="_blank">Facebook</a></p>
+    </div>
+  </div>
+  <script>
+    function toggleTheme() {
+      document.body.classList.toggle('dark');
+      document.body.classList.toggle('light');
+    }
+  </script>
+</body>
+</html>
